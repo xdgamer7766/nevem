@@ -10,6 +10,7 @@ public class App {
     }
     public static void main(String[] args) {
         f1();
+        f2();
     }
 
     public static void f1(){
