@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App {
 
 
@@ -13,5 +15,13 @@ public class App {
     public static void f1(){
         System.out.println("1.Feladat");
         spelling("Polgár Benedek");
+    }
+
+    public static void f2(){
+        System.out.println("2.feladat");
+        Scanner scnr = new Scanner(System.in);
+        System.out.println("Adjon meg egy szót");
+        String yrwrd = scnr.nextLine();
+        spelling(yrwrd);
     }
 }
