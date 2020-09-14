@@ -6,13 +6,13 @@ public class App {
 
     public static void spelling(String word){
         int i = 0;
-        while (i < word.length()) {            
+        while(i < word.length()) {            
            char indexchar = word.charAt(i);
            switch (indexchar){
                case 'c':
                     if (word.charAt(i+1) == 's'){
                         System.out.println("cs");
-                        i = i + 1;
+                        i++;
                     }
                     else
                     {
@@ -27,7 +27,7 @@ public class App {
                         }
                         else{
                             System.out.println("dz");
-                            i = i + 1;
+                            i++;
                         }
                     }
                     else
@@ -38,7 +38,7 @@ public class App {
                 case 'g':
                     if (word.charAt(i+1) == 'y'){
                         System.out.println("gy");
-                        i = i + 1;
+                        i++;
                     }
                     else
                     {
@@ -48,7 +48,7 @@ public class App {
                 case 'l':
                     if (word.charAt(i+1) == 'y'){
                         System.out.println("ly");
-                        i = i + 1;
+                        i++;
                     }
                     else
                     {
@@ -58,7 +58,7 @@ public class App {
                 case 'n':
                     if (word.charAt(i+1) == 'y'){
                         System.out.println("ny");
-                        i = i + 1;
+                        i++;
                     }
                     else
                     {
@@ -68,7 +68,7 @@ public class App {
                 case 's':
                     if (word.charAt(i+1) == 'z'){
                         System.out.println("sz");
-                        i = i + 1;
+                        i++;
                     }
                     else
                     {
@@ -78,7 +78,7 @@ public class App {
                 case 't':
                     if (word.charAt(i+1) == 'y'){
                         System.out.println("ty");
-                        i = i + 1;
+                        i++;
                     }
                     else
                     {
@@ -88,7 +88,7 @@ public class App {
                 case 'z':
                     if (word.charAt(i+1) == 's'){
                         System.out.println("zs");
-                        i = i + 1;
+                        i++;
                     }
                     else
                     {
@@ -99,12 +99,10 @@ public class App {
                     System.out.println(word.charAt(i));
                     break;
            }
+           i++;
         }
     }
-
-
-
-   
+  
 
 
 
