@@ -1,7 +1,19 @@
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 
 public class App {
+    
+    public static void main(String[] args) {
+        f1();
+        f2();
+    }
+
+
+
+
+
 
 
     public static void spelling(String word){
@@ -103,13 +115,42 @@ public class App {
         }
     }
   
+    public static void betuzes(String szo){ 
+        Set <String> duplaBetuk = new HashSet<>();
+        duplaBetuk.add("cs");
+        duplaBetuk.add("dz");
+        duplaBetuk.add("dzs");
+        duplaBetuk.add("gy");
+        duplaBetuk.add("ly");
+        duplaBetuk.add("ny");
+        duplaBetuk.add("sz");
+        duplaBetuk.add("ty");
+        duplaBetuk.add("zs");     
+        String dupla="";
+        int i = 0;
+        while (i < szo.length())
+       
+        {
+            if (i <szo.length()-1) {
+                
+                dupla = "" + szo.charAt(i) + szo.charAt(i + 1);
+            }
+            if (duplaBetuk.contains(dupla.toLowerCase())) {
+                  System.out.println(dupla);
+                  i++;
+            }  else {
+                  System.out.println(szo.charAt(i));
+            }
+            i++;
+        }
 
-
-
-    public static void main(String[] args) {
-        f1();
-        f2();
+        char [] betuk = szo.toCharArray();
+        for (char ch: betuk)
+            System.out.println(ch);
     }
+
+
+
 
     public static void f1(){
         System.out.println("1.Feladat");
