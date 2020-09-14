@@ -5,7 +5,8 @@ public class App {
 
 
     public static void spelling(String word){
-        for (int i = 0; i < word.length(); i++) {            
+        int i = 0;
+        while (i < word.length()) {            
            char indexchar = word.charAt(i);
            switch (indexchar){
                case 'c':
@@ -100,7 +101,10 @@ public class App {
            }
         }
     }
-  
+
+
+
+   
 
 
 
